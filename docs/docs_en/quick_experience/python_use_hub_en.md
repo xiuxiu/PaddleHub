@@ -65,6 +65,7 @@ $ hub install deeplabv3p_xception65_humanseg
 import paddlehub as hub
 module = hub.Module(name="deeplabv3p_xception65_humanseg")
 res = module.segmentation(paths = ["./test_image.jpg"], visualization=True, output_dir='humanseg_output')
+print("The resuls are: ", res)
 ```
 
     [32m[2020-07-22 12:22:49,474] [    INFO] - Installing deeplabv3p_xception65_humanseg module [0m
@@ -88,6 +89,7 @@ As you can see, the execution of PaddleHub with Python codes requires only three
 import paddlehub as hub  
 module = hub.Module(name="deeplabv3p_xception65_humanseg")  
 res = module.segmentation(paths = ["./test.jpg"], visualization=True, output_dir='humanseg_output')  
+print("The resuls are: ", res)
 ```
 
 * Model names are specified through the `hub.Module` API.
@@ -114,6 +116,7 @@ $ hub install ace2p
 import paddlehub as hub
 module = hub.Module(name="ace2p")
 res = module.segmentation(paths = ["./test_image.jpg"], visualization=True, output_dir='ace2p_output')
+print("The resuls are: ", res)
 ```
 
     [32m[2020-07-22 12:23:58,027] [    INFO] - Installing ace2p module [0m
@@ -148,6 +151,7 @@ $ hub install ultra_light_fast_generic_face_detector_1mb_640
 import paddlehub as hub
 module = hub.Module(name="ultra_light_fast_generic_face_detector_1mb_640")
 res = module.face_detection(paths = ["./test_image.jpg"], visualization=True, output_dir='face_detection_output')
+print("The resuls are: ", res)
 ```
 
     [32m[2020-07-22 12:25:12,948] [    INFO] - Installing ultra_light_fast_generic_face_detector_1mb_640 module [0m
@@ -182,6 +186,7 @@ $ hub install human_pose_estimation_resnet50_mpii
 import paddlehub as hub
 module = hub.Module(name="human_pose_estimation_resnet50_mpii")
 res = module.keypoint_detection(paths = ["./test_image.jpg"], visualization=True, output_dir='keypoint_output')
+print("The resuls are: ", res)
 ```
 
     [32m[2020-07-23 11:27:33,989] [    INFO] - Installing human_pose_estimation_resnet50_mpii module [0m
